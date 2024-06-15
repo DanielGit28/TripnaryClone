@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".ui.listaDeseos.ListaDeseosFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/SteelBlue"
+        app:navigationIcon="@drawable/ic_arrow_back_white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wishlists_toolbar_title"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:layout_gravity="center"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/title_internet_deseos"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:background="@color/darkGrey"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center_horizontal"
+        android:text="@string/no_internet_toolbar_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/image_no_data_lista_deseos"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:background="@drawable/bg_no_data"
+        android:visibility="gone"
+        app:layout_goneMarginBottom="@dimen/_25sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.256" />
+
+    <TextView
+        android:id="@+id/title_no_data_lista_deseos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/no_data_label"
+        android:textColor="@color/text_high_contrast"
+        android:textSize="@dimen/_16ssp"
+        app:layout_goneMarginTop="@dimen/_10sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/info_no_data_lista_deseos"
+        app:layout_constraintEnd_toEndOf="@id/image_no_data_lista_deseos"
+        app:layout_constraintStart_toStartOf="@id/image_no_data_lista_deseos"
+        app:layout_constraintTop_toBottomOf="@id/image_no_data_lista_deseos" />
+
+    <TextView
+        android:id="@+id/info_no_data_lista_deseos"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/open_sans_medium"
+        android:text="@string/no_data_info"
+        android:textAlignment="center"
+        android:textColor="@color/text_low_contrast"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/title_no_data_lista_deseos"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@id/title_no_data_lista_deseos"
+        app:layout_constraintTop_toBottomOf="@id/title_no_data_lista_deseos" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_lista_deseos_items"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_internet_deseos" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

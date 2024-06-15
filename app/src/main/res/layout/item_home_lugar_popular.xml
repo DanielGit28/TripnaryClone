@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_product"
+        android:layout_width="181dp"
+        android:layout_height="280dp"
+        app:cardBackgroundColor="@color/secondary"
+        app:cardCornerRadius="@dimen/_30sdp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/image_product"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:contentDescription="@string/image_content_description"
+        android:src="@drawable/placeholder_100_100_rounded"
+        app:layout_constraintBottom_toTopOf="@+id/text_product_title"
+        app:layout_constraintEnd_toEndOf="@+id/card_product"
+        app:layout_constraintStart_toStartOf="@+id/card_product"
+        app:layout_constraintTop_toTopOf="@+id/card_product"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/text_product_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_medium"
+        android:maxLines="2"
+        android:gravity="center"
+        android:textColor="@color/textHighContrast"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        app:layout_constraintBottom_toTopOf="@+id/image_rating_stars"
+        app:layout_constraintEnd_toEndOf="@+id/card_product"
+        app:layout_constraintStart_toStartOf="@+id/card_product"
+        app:layout_constraintTop_toBottomOf="@+id/image_product" />
+
+    <ImageView
+        android:id="@+id/image_rating_stars"
+        android:layout_width="28dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:contentDescription="@string/image_content_description"
+        android:src="@drawable/ic_star_yellow"
+        app:layout_constraintBottom_toTopOf="@+id/text_original_price"
+        app:layout_constraintStart_toStartOf="@+id/text_product_title"
+        app:layout_constraintTop_toBottomOf="@+id/text_product_title" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="27dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center"
+        android:textColor="@color/textHighContrast"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toTopOf="@+id/text_total_rating_count"
+        app:layout_constraintStart_toEndOf="@+id/text_total_rating_count"
+        app:layout_constraintTop_toBottomOf="@+id/text_total_rating_count" />
+
+    <TextView
+        android:id="@+id/text_total_rating_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:fontFamily="@font/open_sans_regular"
+        android:text="@string/puntuacion"
+        android:textColor="@color/textLowContrast"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_rating_stars"
+        app:layout_constraintStart_toEndOf="@+id/image_rating_stars"
+        app:layout_constraintTop_toTopOf="@+id/image_rating_stars" />
+
+    <TextView
+        android:id="@+id/text_original_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_strike_through"
+        android:fontFamily="@font/open_sans_regular"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_12ssp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/card_product"
+        app:layout_constraintStart_toStartOf="@+id/image_rating_stars"
+        app:layout_constraintTop_toBottomOf="@+id/image_rating_stars" />
+
+    <TextView
+        android:id="@+id/text_selling_price"
+        android:layout_width="149dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center"
+        android:textColor="@color/textHighContrast"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_original_price"
+        app:layout_constraintEnd_toEndOf="@id/card_product"
+        app:layout_constraintTop_toTopOf="@+id/text_original_price" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_notification"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_15sdp"
+        app:cardBackgroundColor="@color/primary"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_15sdp">
+
+
+            <TextView
+                android:id="@+id/text_notification_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:text="@string/item_opciones_lugares_modal"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toTopOf="@+id/card_link_4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.236" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_link_4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_56sdp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                app:cardBackgroundColor="@color/secondary"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_notification_title" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_left_icon_link_4"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_link_4"
+                app:layout_constraintStart_toStartOf="@+id/card_link_4"
+                app:layout_constraintTop_toTopOf="@+id/card_link_4" />
+
+            <ImageView
+                android:id="@+id/image_left_icon_link_4"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/ic_travel"
+                app:layout_constraintBottom_toBottomOf="@+id/card_left_icon_link_4"
+                app:layout_constraintEnd_toEndOf="@+id/card_left_icon_link_4"
+                app:layout_constraintStart_toStartOf="@+id/card_left_icon_link_4"
+                app:layout_constraintTop_toTopOf="@+id/card_left_icon_link_4"
+                app:tint="@color/orange" />
+
+            <TextView
+                android:id="@+id/text_link_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:text="@string/item_title_lugares_propios_modal"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_left_icon_link_4"
+                app:layout_constraintStart_toEndOf="@+id/card_left_icon_link_4"
+                app:layout_constraintTop_toTopOf="@+id/card_left_icon_link_4" />
+
+            <ImageView
+                android:id="@+id/image_right_icon_link_4"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/ic_chevron"
+                app:layout_constraintBottom_toBottomOf="@+id/card_link_4"
+                app:layout_constraintEnd_toEndOf="@+id/card_link_4"
+                app:layout_constraintTop_toTopOf="@+id/card_link_4"
+                app:tint="@color/textLowContrast" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_link_5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_56sdp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                app:cardBackgroundColor="@color/secondary"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_link_4" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_left_icon_link_5"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_link_5"
+                app:layout_constraintStart_toStartOf="@+id/card_link_5"
+                app:layout_constraintTop_toTopOf="@+id/card_link_5" />
+
+            <ImageView
+                android:id="@+id/image_left_icon_link_5"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/ic_travel_places"
+                app:layout_constraintBottom_toBottomOf="@+id/card_left_icon_link_5"
+                app:layout_constraintEnd_toEndOf="@+id/card_left_icon_link_5"
+                app:layout_constraintStart_toStartOf="@+id/card_left_icon_link_5"
+                app:layout_constraintTop_toTopOf="@+id/card_left_icon_link_5"
+                app:tint="@color/orange" />
+
+            <TextView
+                android:id="@+id/text_link_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:text="@string/item_title_lugares_recomendados_modal"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_left_icon_link_5"
+                app:layout_constraintStart_toEndOf="@+id/card_left_icon_link_5"
+                app:layout_constraintTop_toTopOf="@+id/card_left_icon_link_5" />
+
+            <ImageView
+                android:id="@+id/image_right_icon_link_5"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/ic_chevron"
+                app:layout_constraintBottom_toBottomOf="@+id/card_link_5"
+                app:layout_constraintEnd_toEndOf="@+id/card_link_5"
+                app:layout_constraintTop_toTopOf="@+id/card_link_5"
+                app:tint="@color/textLowContrast" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

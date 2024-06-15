@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".ui.planesviajes.agregarviaje.views.RegistrarPlanViajeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/SteelBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back_white"
+        app:titleTextColor="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:text="@string/register_viaje_screen_toolbar_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_30sdp">
+
+            <TextView
+                android:id="@+id/text_screen_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/open_sans_medium"
+                android:text="@string/register_viaje_heading"
+                android:textColor="@color/textLowContrast"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"  />
+
+            <TextView
+                android:id="@+id/text_name_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/register_plan_nombre_label"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/text_screen_info"
+                app:layout_constraintStart_toStartOf="@id/text_screen_info"
+                app:layout_constraintTop_toBottomOf="@+id/text_screen_info" />
+
+            <EditText
+                android:id="@+id/edit_text_name_plan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:autofillHints="text"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="@dimen/_15sdp"
+                android:fontFamily="@font/open_sans_medium"
+                android:hint="@string/register_plan_nombre_hint"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:textColor="@color/textHighContrast"
+                android:textColorHint="@color/textLowContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/text_name_label"
+                app:layout_constraintStart_toStartOf="@id/text_name_label"
+                app:layout_constraintTop_toBottomOf="@+id/text_name_label" />
+
+            <TextView
+                android:id="@+id/text_fecha_inicio_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/register_plan_fechaInicio_label"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/edit_text_name_plan"
+                app:layout_constraintStart_toStartOf="@id/edit_text_name_plan"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_name_plan" />
+
+            <TextView
+                android:id="@+id/button_fecha_inicio"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:autofillHints="text"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="@dimen/_15sdp"
+                android:fontFamily="@font/open_sans_medium"
+                android:gravity="center_vertical"
+                android:hint="@string/register_plan_fecha_placeholder"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:textColor="@color/textHighContrast"
+                android:textColorHint="@color/textLowContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/text_fecha_inicio_label"
+                app:layout_constraintStart_toStartOf="@id/text_fecha_inicio_label"
+                app:layout_constraintTop_toBottomOf="@+id/text_fecha_inicio_label" />
+
+            <TextView
+                android:id="@+id/text_fecha_fin_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/register_plan_fechaFin_label"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/button_fecha_inicio"
+                app:layout_constraintStart_toStartOf="@id/button_fecha_inicio"
+                app:layout_constraintTop_toBottomOf="@+id/button_fecha_inicio" />
+
+            <TextView
+                android:id="@+id/button_fecha_fin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:autofillHints="text"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="@dimen/_15sdp"
+                android:fontFamily="@font/open_sans_medium"
+                android:gravity="center_vertical"
+                android:hint="@string/register_plan_fecha_placeholder"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:textColor="@color/textHighContrast"
+                android:textColorHint="@color/textLowContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/text_fecha_fin_label"
+                app:layout_constraintStart_toStartOf="@id/text_fecha_fin_label"
+                app:layout_constraintTop_toBottomOf="@+id/text_fecha_fin_label" />
+
+
+
+
+            <Button
+                android:id="@+id/button_submit_plan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_52sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:backgroundTint="@color/SteelBlue"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/register_button_plan_label"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="@id/button_fecha_fin"
+                app:layout_constraintStart_toStartOf="@id/button_fecha_fin"
+                app:layout_constraintTop_toBottomOf="@+id/button_fecha_fin" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,630 @@
+<resources>
+    <string name="app_name">Tripnary</string>
+    <string name="brand_slogan">El mundo en tus \nmanos\!</string>
+
+    <!-- Default -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="no_notes_icon">No Notes icon</string>
+    <string name="no_notes_text">You have no tasks</string>
+
+    <string name="menu_search_item">Search</string>
+    <string name="menu_add_item">Add</string>
+    <string name="menu_edit_item">Edit</string>
+    <string name="menu_remove_item">Remove</string>
+    <string name="search_query_hint">Search your Note</string>
+
+    <string name="notes_list_screen_title">Notes</string>
+    <string name="add_note_screen_title">Add a note</string>
+    <string name="tag_list_screen_title">Tags</string>
+
+    <string name="add_note_title_hint_text">Title</string>
+    <string name="add_note_tag_text">Tag</string>
+    <string name="add_note_description_hint_text">Description</string>
+    <string name="add_note_action">Add Note</string>
+    <string name="add_note_success_message">Note Added\!</string>
+    <string name="add_note_empty_title_error">Please add a title for the note</string>
+    <string name="add_note_empty_tag_error">Please add a tag for the note</string>
+
+    <string name="remove_note_confirm_title">Remove Note</string>
+    <string name="remove_note_confirm_message">Are you sure you want to remove %s?</string>
+
+    <string name="remove_tag_confirm_title">Remove Tag</string>
+    <string name="remove_tag_confirm_message">Are you sure you want to remove %s?</string>
+
+    <string name="add_tag_alert_title">Add a tag</string>
+    <string name="edit_tag_alert_title">Edit tag</string>
+    <string name="add_tag_positive_action">Add</string>
+    <string name="edit_tag_positive_action">Edit</string>
+    <string name="edit_tag_empty_name_error">Please add a name</string>
+
+
+    <string name="confirm_alert_positive_action">Yes</string>
+    <string name="confirm_alert_negative_action">Cancel</string>
+
+    <!-- Valores de strings de la pantalla de edición de perfil -->
+    <string name="edit_profile_toolbar_title">Editar perfil</string>
+    <string name="edit_profile_full_name">Jonathan Doe</string>
+    <string name="edit_profile_email">test@hotmail.com</string>
+    <string name="edit_profile_name_label">Nombre</string>
+    <string name="edit_profile_name_hint">Ingresa tu nombre</string>
+    <string name="edit_profile_email_label">Correo electrónico</string>
+    <string name="edit_profile_email_hint">Ingresa tu dirección de correo electrónico</string>
+    <string name="edit_profile_phone_label">Teléfono</string>
+    <string name="edit_profile_phone_hint">Ingresa tu número de teléfono</string>
+    <string name="edit_profile_latitude_hint">Ingresa tu latitud</string>
+    <string name="edit_profile_longitude_hint">Ingresa tu longitud</string>
+    <string name="dob_label">Fecha de nacimiento</string>
+    <string name="latitud_label">Latitud</string>
+    <string name="longitud_label">Longitud</string>
+    <string-array name="edit_profile_days_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="categorias_viaje_array">
+        <item>Histórico</item>
+        <item>Bosque</item>
+        <item>Aventura</item>
+        <item>Natural</item>
+        <item>Religioso</item>
+        <item>Ciudad</item>
+        <item>Arqueológico</item>
+        <item>Emblemático</item>
+        <item>Museo</item>
+        <item>Parque nacional</item>
+        <item>Sagrado</item>
+        <item>Jardín</item>
+        <item>Industrial</item>
+        <item>Literario</item>
+        <item>Cinematográfico</item>
+        <item>Gastronómico</item>
+        <item>Monumento</item>
+        <item>Científico</item>
+        <item>Entretenimiento</item>
+        <item>Arquitectura</item>
+    </string-array>
+    <string-array name="temporadas_array">
+        <item>Primavera</item>
+        <item>Verano</item>
+        <item>Otoño</item>
+        <item>Invierno</item>
+    </string-array>
+    <string-array name="continentes_array">
+        <item>África</item>
+        <item>América del Norte</item>
+        <item>América del Sur</item>
+        <item>Asia</item>
+        <item>Europa</item>
+        <item>Oceanía</item>
+    </string-array>
+    <string-array name="edit_profile_months_array">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+    <string-array name="edit_profile_years_array">
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+    </string-array>
+    <string-array name="roles_colaboradores">
+        <item>Lector</item>
+        <item>Editor</item>
+    </string-array>
+    <string name="edit_profile_submit_button_label">Enviar</string>
+    <string name="edit_profile_date_button_label">Escoger Fecha</string>
+
+    <!-- Valores de strings de la pantalla de mi perfil -->
+    <string name="my_profile_toolbar_title">Mi perfil</string>
+    <string name="my_profile_full_name">Jonathan Doe</string>
+    <string name="my_profile_email">jonathan@yahoo.com</string>
+    <string name="my_profile_edit_profile_label">Editar perfil</string>
+    <string name="my_profile_app_settings_label">Configuración</string>
+    <string name="my_profile_my_orders_label">Mis pedidos</string>
+    <string name="my_profile_my_wishlist_label">Mi lista de deseos</string>
+    <string name="my_profile_my_wallet_label">Mi billetera</string>
+    <string name="my_profile_change_language_label">Cambiar idioma</string>
+    <string name="my_profile_planes_label">Ver Planes de Viaje</string>
+    <string name="my_profile_coupons_label">Cupones</string>
+    <string name="my_profile_estadisticas_label">Estadísticas</string>
+
+    <!-- Valor de strings para la descripción de contenido de imagen -->
+    <string name="image_content_description">Descripción del contenido de la imagen</string>
+    <string name="content_description">Descripción del contenido</string>
+
+    <!-- Valores de strings de la pantalla de registro -->
+    <string name="register_screen_toolbar_title">Registrarse</string>
+    <string name="register_screen_heading">Registrarse</string>
+    <string name="register_interests_heading">Selecciona tus preferencias de viaje</string>
+    <string name="register_screen_info">Hola, ingresa tus detalles para crear una nueva cuenta de cliente.</string>
+    <string name="register_name_label">Nombre</string>
+    <string name="register_travel_question_label">¿Qué tipo de viaje estás buscando?</string>
+    <string name="register_name_hint">Ingresa tu nombre</string>
+    <string name="register_email_label">Correo electrónico</string>
+    <string name="documento_url_label">URL</string>
+    <string name="register_contintents_label">¿Cuál es tu destino preferido?</string>
+    <string name="register_email_hint">Ingresa tu dirección de correo electrónico</string>
+    <string name="register_phone_label">Teléfono</string>
+    <string name="register_seasons_label">¿Cuál temporada prefieres?</string>
+    <string name="register_phone_hint">Ingresa tu contraseña</string>
+    <string name="register_log_me_in_label">Iniciarme sesión</string>
+    <string name="register_button_label">Registrarse</string>
+    <string name="register_question_bottom">¿Ya tienes una cuenta?</string>
+    <string name="register_login_here_label">Inicia sesión aquí</string>
+    <string name="register_password_label">Contraseña</string>
+    <string name="register_confirm_password_label">Confirmar contraseña</string>
+    <string name="register_age_label">Fecha de nacimiento</string>
+    <string name="register_confirm_password_hint">Confirme su contraseña</string>
+
+    <!-- Valores de strings de la pantalla de informacion inicial -->
+    <string name="information_screen_welcome">Bienvenido a Tripnary</string>
+    <string name="information_screen_info">Planea el viaje perfecto con Tripnary</string>
+    <string name="information_screen_action_label">Siguiente</string>
+
+    <!-- Valores de strings del menu inferior -->
+    <string name="item_home_bottom_nav_1">Inicio</string>
+    <string name="item_home_bottom_nav_2">Carrito</string>
+    <string name="item_home_bottom_nav_3">Perfil</string>
+    <string name="item_home_bottom_nav_4">Notificaciones</string>
+
+    <!-- Valores de strings del menu lateral -->
+    <string name="item_home_drawer_nav_1">Inicio</string>
+    <string name="item_home_drawer_nav_2">Soporte y ayuda</string>
+    <string name="item_home_drawer_nav_3">Lista de Deseos</string>
+    <string name="item_home_drawer_nav_mensajes">Mensajes</string>
+    <string name="item_home_drawer_nav_4">Mis viajes</string>
+    <string name="item_home_drawer_nav_5">Página 404 No encontrada</string>
+    <string name="item_home_drawer_nav_6">Sin conexión a Internet</string>
+    <string name="item_home_drawer_nav_7">Preguntas frecuentes</string>
+    <string name="item_home_drawer_nav_8">Iniciar sesión</string>
+    <string name="item_home_drawer_nav_9">Registrarse</string>
+    <string name="item_home_drawer_nav_10">Vuelos</string>
+    <string name="item_home_drawer_nav_11">Hoteles</string>
+    <string name="item_home_drawer_nav_12">Soporte</string>
+
+    <!-- Valores de cadena de la pantalla de inicio -->
+    <string name="home_drawer_open">abrir</string>
+    <string name="home_drawer_close">cerrar</string>
+    <string name="home_greeting">¡Hola, Jack!</string>
+    <string name="home_search_here_hint">Buscar aquí…</string>
+    <string name="home_categories_label">Categorías</string>
+    <string name="home_lugares_label">Lugares Recomendados</string>
+    <string name="home_most_popular_label">Más populares</string>
+    <string name="home_offer_label">Oferta del día</string>
+    <string name="home_recently_viewed_label">Vistos recientemente</string>
+    <string name="home_scratch_win_label">Rascar y ganar</string>
+    <string name="home_see_all_label">Ver todo</string>
+    <string name="home_best_restaurants_label">Mejores restaurantes</string>
+    <string name="home_best_restaurant_distance">30 minutos</string>
+    <string name="home_best_restaurant_name">Eats Meets West</string>
+    <string name="home_best_restaurant_rating">5</string>
+    <string name="home_best_restaurant_rating_count">(25)</string>
+
+    <!--  Lugares home item layout string values  -->
+    <string name="item_lugares_home_title">Gatos</string>
+
+    <!--  Login  -->
+    <string name="login_screen_toolbar_title">Inicio sesión</string>
+    <string name="login_screen_heading">Inicio de sesión</string>
+    <string name="login_screen_info">Ingrese sus datos para poder acceder a la aplicación</string>
+    <string name="login_email_label">Email</string>
+    <string name="login_email_hint">joe@gmail.com</string>
+    <string name="login_password_label">Contraseña</string>
+    <string name="login_password_hint">********</string>
+    <string name="login_remember_me_label">Recordarme</string>
+    <string name="login_question_one">Olvidaste contraseña?</string>
+    <string name="login_button_label">Ingresar</string>
+    <string name="login_or_label">O</string>
+    <string name="login_question_two">No tienes una cuenta?</string>
+    <string name="login_create_here_label">Crear cuenta</string>
+
+    <!-- Olvido contraseña  -->
+    <string name="forgot_password_toolbar_title">Olvido de contraseña</string>
+    <string name="forgot_password_heading">Cambio de contraseña</string>
+    <string name="forgot_password_info">Ingrese su correo electrónico para recibir un código con el cual podrá cambiar su contraseña</string>
+    <string name="forgot_password_email_label">Email</string>
+    <string name="forgot_password_email_hint">Ingrese su correo electrónico</string>
+    <string name="forgot_password_button">Enviar</string>
+
+    <!--  Cambio contraseña  -->
+    <string name="change_password_toolbar_title">Cambiar contraseña</string>
+    <string name="change_password_heading">Cambiar la contraseña</string>
+    <string name="change_password_info">Ingrese el código que recibió en el correo electrónico y luego digite una nueva contraseña</string>
+    <string name="change_password_code_label">Código de verificación</string>
+    <string name="change_password_password_label">Nueva contraseña</string>
+    <string name="change_password_password_hint">Ingresa la nueva contraseña</string>
+    <string name="change_password_confirm_label">Confirmar contraseña</string>
+    <string name="change_password_confirm_hint">Confirmar contraseña</string>
+    <string name="change_password_button">Cambiar contraseña</string>
+    <!-- Valores de los strings de la pantalla de lista de paises -->
+    <string name="paises_toolbar_title">Destinos</string>
+    <string name="paises_seleccion_title">Seleccione un continente</string>
+    <string name="paises_seleccion_title_descripcion">Descripcion</string>
+
+    <!-- Valores de los strings del diseño de elementos de la lista de paises -->
+    <string name="item_paises_title">País</string>
+    <string name="item_paises_rating">5.0 de 5</string>
+    <string name="item_paises_rating_count">(31)</string>
+    <string name="item_paises_original_price">$12.00</string>
+    <string name="item_paises_selling_price">$10.00</string>
+    <string name="wishlist_toolbar_title">Mis viajes</string>
+    <string name="item_lista_deseos_title">Lugar</string>
+    <string name="lista_deseos_seleccion_title_direccion">Direccion</string>
+
+    <!-- Valores de strings de la pantalla de registro de planes de viaje-->
+    <string name="register_viaje_screen_toolbar_title">Agregar Viaje</string>
+    <string name="register_viaje_heading">Ingresa la información de tu plan de viaje</string>
+    <string name="register_plan_nombre_label">Nombre</string>
+    <string name="register_plan_nombre_hint">Ingresa el nombre</string>
+    <string name="register_plan_fechaInicio_label">Fecha de Inicio</string>
+    <string name="register_plan_fechaFin_label">Fecha de Fin</string>
+    <string name="register_plan_fecha_placeholder">dd/mm/yyyy</string>
+    <string name="register_button_plan_label">Crear Viaje</string>
+
+    <!--  Product screen string values  -->
+    <string name="product_toolbar_title">Product Details</string>
+    <string name="lugares_recomendados_toolbar_title">Detalles de Lugar Turístico</string>
+    <string name="product_title">Chicken ham burger with tomato and</string>
+    <string name="product_rating">4.9</string>
+    <string name="product_rating_count">(199)</string>
+    <string name="product_badge_label">Non veg</string>
+    <string name="product_ingredients_label">Ingredients</string>
+    <string name="lugares_info_adicional_label">Información Adicional</string>
+    <string name="product_price_label">Price</string>
+    <string name="product_original_price">$12.00</string>
+    <string name="product_selling_price">$10.00</string>
+    <string name="product_description_label">Description</string>
+    <string name="lugares_descripcion_label">Descripción</string>
+    <string name="lugares_temporada_label">Temporada</string>
+    <string name="product_description">It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.</string>
+    <string name="product_qty">1</string>
+    <string name="product_add_to_cart_label">Add To Cart</string>
+
+
+    <!--  Items dias  layout string values  -->
+    <string name="item_dia_name">Día 1</string>
+    <string name="item_dia_fecha">18/08/2023</string>
+
+    <!--  Perfil screen string values  -->
+
+    <string name="perfil_plan_title_duracion">Duración del viaje</string>
+    <string name="perfil_plan_title_lugares">Lugares</string>
+
+    <!--  Planes Viajes item layout string values  -->
+    <string name="item_plan_title">Viaje de amigos</string>
+    <string name="item_plan_pais">FRA</string>
+    <string name="item_plan_fechas">$10.00</string>
+
+    <!-- Valores de los strings de la pantalla de lista de ciudades -->
+    <string name="ciudades_toolbar_title">Ciudades</string>
+    <string name="ciudades_seleccion_title">Seleccione un país</string>
+    <string name="ciudades_seleccion_title_descripcion">Descripcion</string>
+    <string name="puntuacion">Puntuación:</string>
+
+    <!-- Valores de los strings del diseño de elementos de la lista de lugares -->
+    <string name="item_lugares_title">Lugar</string>
+    <string name="item_toolbar_title_lugar">España</string>
+
+    <!-- Valores de los strings de la pantalla de lista de paises -->
+    <string name="lugares_toolbar_title">Destinos</string>
+    <string name="lugares_seleccion_title">Seleccione una ciudad</string>
+    <string name="lugares_seleccion_title_descripcion">Descripcion</string>
+    <string name="lugares_button_title">Agregar Lugar</string>
+
+    <!-- Valores de strings de la pantalla de registro de planes de viaje-->
+    <string name="register_lugar_screen_toolbar_title">Agregar Lugar</string>
+    <string name="register_colaborador_screen_toolbar_title">Agregar Colaborador</string>
+    <string name="register_lugar_heading">Ingresa la información del lugar</string>
+    <string name="register_colaborador_heading">Ingresa la información del colaborador</string>
+    <string name="register_lugar_nombre_label">Nombre</string>
+    <string name="register_lugar_nombre_hint">Ingresa el nombre</string>
+    <string name="register_lugar_horaInicio_label">Hora de Inicio</string>
+    <string name="register_lugar_horaFin_label">Hora de Fin</string>
+    <string name="register_lugar_fecha_placeholder">hh:mm</string>
+    <string name="register_button_lugar_label">Crear Lugar</string>
+    <string name="register_lugar_spinner_label">Seleccione el día</string>
+    <string name="register_rol_spinner_label">Seleccione el rol</string>
+    <string name="perfil_rol_spinner_label">Rol</string>
+    <string name="perfil_documento_link_label">Revisar</string>
+    <string name="perfil_documento_lugar_label">Lugar Asociado</string>
+    <string name="register_lugar_direccion_label">Dirección</string>
+    <string name="register_colaborador_correo_label">Correo</string>
+    <string name="register_lugar_direccion_hint">Ingresa la dirección</string>
+    <string name="register_colaborador_correo_hint">Ingresa el correo</string>
+    <string name="lugares_button_register">Crear Lugar</string>
+    <string name="colaboradores_button_register">Enviar invitación</string>
+    <!--  Modal item layout string values  -->
+    <string name="item_dias_modal">¿A qué día le gustaría agregar este lugar?</string>
+
+    <!-- Valores de strings de la pantalla de registro de lugares recomendados AI-->
+    <string name="register_lugar_recomendado_ai_screen_toolbar_title">Generar recomendaciones</string>
+    <string name="register_restaurante_recomendado_ai_screen_toolbar_title">Generar restaurantes AI</string>
+    <string name="register_lugar_recomendado_ai_heading">Ingresa la información del lugar que deseas una recomendación (puede tomar entre 30 segundos y 1 minuto)</string>
+    <string name="register_restaurante_recomendado_ai_heading">Ingresa la información del lugar que deseas una recomendación de restaurantes(puede tomar entre 30 segundos y 1 minuto)</string>
+    <string name="lugar_label">Lugar preferido</string>
+    <string name="edit_lugar">Torre Eiffel</string>
+    <string name="label_ciudad">Ciudad</string>
+    <string name="edit_ciudad">Paris</string>
+    <string name="label_presupuesto">Presupuesto</string>
+    <string name="edit_presupuesto">150</string>
+    <string name="button_prompt">Generar recomendaciones</string>
+    <string name="lugares_ai_toolbar_title">Lugares AI</string>
+    <string name="restaurantes_ai_toolbar_title">Restaurantes AI</string>
+
+    <string name="label_tipo_comida">Tipo de comida</string>
+    <string name="edit_tipo_comida">Francesa</string>
+
+
+    <string name="item_recomendacion_ai_nombre">Nombre recomendacion AI</string>
+    <string name="item_recomendacion_ai_horario">Horario recomendacion AI</string>
+    <string name="item_recomendacion_ai_precio">Precio recomendacion AI</string>
+    <string name="item_recomendacion_ai_direccion">Direccion recomendacion AI</string>
+    <string name="item_recomendacion_ai_dia">Dia recomendacion AI</string>
+
+    <string name="item_recomendacion_restaurante_ai_rating">Rating AI</string>
+
+    <string name="button_reiniciar_recomendaciones_ai">Volver a generar recomendaciones</string>
+
+
+    <!-- Valores de strings de items de lugares recomendados AI-->
+    <string name="item_lugar_recomendado_ai_title">Día 1</string>
+    <string name="item_lugar_recomendado_ai_subtitle">Lugares/actividades</string>
+    <string name="item_lugar_recomendado_ai_item">Cerca del Museo Louvre</string>
+
+    <!--  Modal Opciones Registro Lugares layout string values  -->
+    <string name="item_opciones_lugares_modal">¿Qué estás buscando?</string>
+    <string name="item_title_lugares_propios_modal">Agregar lugar</string>
+    <string name="item_title_lugares_recomendados_modal">Recomendados</string>
+    <string name="item_title_agregar_documentos_modal">Agregar Documento</string>
+    <string name="item_title_listar_documentos_modal">Lista de Documentos</string>
+    <!--  Lista Lugares item layout string values  -->
+    <string name="item_lista_lugares_title_perfil">Nombre</string>
+    <string name="item_lista_lugares_title_date">31 Jan, 2023</string>
+    <string name="item_lista_lugares_completado_perfil">Por completar</string>
+    <string name="item_recent_transactions_type">Subscription</string>
+
+    <!-- Valores de strings de la pantalla del menu del viaje -->
+    <string name="menu_viaje_toolbar_title">Mi viaje</string>
+    <string name="menu_viaje_title">Planificador de Viaje</string>
+    <string name="menu_colaboradores_title">Colaboradores</string>
+    <string name="colaboradores_title">Colaboradores</string>
+    <string name="documentos_title">Documentos</string>
+    <string name="register_colaborador_info">Acá puedes modificar el acceso del colaborador a tu plan de viaje.</string>
+    <string name="register_documento_info">Acá puedes modificar el nombre del documento y revisar el archivo.</string>
+    <string name="register_colaborador_title">Colaborador</string>
+    <string name="documento_perfil_title">Documento</string>
+    <string name="register_colaborador_button">Modificar</string>
+    <string name="link_button">Revisar Documento</string>
+    <string name="menu_update_viaje_title">Actualizar Viaje</string>
+    <string name="menu_eliminar_viaje_title">Eliminar Viaje</string>
+
+    <!--  No internet screen string values  -->
+    <string name="no_internet_toolbar_title">Sin conexión a Internet</string>
+    <string name="no_internet_label">¡Sin conexión a Internet!</string>
+    <string name="no_internet_info">Parece que no tienes conexión a Internet.\nPor favor, verifica tu configuración de Wi-Fi.</string>
+
+
+    <!-- Valores de strings de la pantalla del menu del lugar -->
+    <string name="menu_lugar_toolbar_title">Mi Lugar</string>
+    <string name="menu_editar_lugar_title">Editar Lugar</string>
+    <string name="menu_editar_notas_title">Notas</string>
+    <string name="menu_editar_equipaje_lugar_title">Equipaje</string>
+    <string name="menu_recomendacionesAI">Lugares IA</string>
+    <string name="menu_restaurantesAI">Restaurantes IA</string>
+    <string name="menu_eliminar_lugar_title">Eliminar lugar</string>
+    <string name="menu_mapa_lugar_title">Ver mapa</string>
+
+    <!-- Valores de strings de la pantalla de registro de planes de viaje-->
+    <string name="update_lugar_screen_toolbar_title">Actualizar Lugar</string>
+    <string name="update_lugar_heading">Actualiza la información del lugar</string>
+    <string name="update_lugar_nombre_label">Nombre</string>
+    <string name="update_lugar_nombre_hint">Ingresa el nombre</string>
+    <string name="update_lugar_horaInicio_label">Hora de Inicio</string>
+    <string name="update_lugar_horaFin_label">Hora de Fin</string>
+    <string name="update_lugar_fecha_placeholder">hh:mm</string>
+    <string name="update_button_lugar_label">Actualizar Lugar</string>
+    <string name="update_lugar_spinner_label">Cambiar el día de visita</string>
+    <string name="update_lugar_direccion_label">Dirección</string>
+    <string name="update_lugar_direccion_hint">Ingresa la dirección</string>
+    <string name="update_button_register">Actualizar Lugar</string>
+
+
+    <!-- Valores de strings de la pantalla de actualizar de planes de viaje-->
+    <string name="update_viaje_screen_toolbar_title">Actualizar Viaje</string>
+    <string name="update_viaje_heading">Actualiza la información de tu plan de viaje</string>
+    <string name="ingresar_documento_heading">Ingresa una imagen o documento relacionado a tu viaje</string>
+    <string name="update_plan_nombre_label">Nombre</string>
+    <string name="update_plan_nombre_hint">Ingresa el nombre</string>
+    <string name="update_plan_fechaInicio_label">Fecha de Inicio</string>
+    <string name="update_plan_fechaFin_label">Fecha de Fin</string>
+    <string name="update_plan_fecha_placeholder">dd/mm/yyyy</string>
+    <string name="ingresar_documento_placeholder">Imágenes o Documentos</string>
+    <string name="update_button_plan_label">Actualizar Viaje</string>
+    <string name="ingresar_documento_plan_label">Guardar</string>
+    <!-- Valores de cadena para la pantalla "No data" -->
+    <string name="no_data_toolbar_title">Sin Datos</string>
+    <string name="no_data_label">¡Sin Datos!</string>
+    <string name="no_data_info">Parece que no se encontraron datos para esta pantalla.\nPor favor, ten paciencia.</string>
+
+
+    <!-- Valores de strings de la pantalla de agregar deseo de la lista de deseos a plan de viaje -->
+    <string name="register_deseo_screen_toolbar_title">Agregar Deseo a Plan de Viaje</string>
+    <string name="register_lista_deseos_plan_heading">Ingresa la información del plan de viaje</string>
+    <string name="register_plan_spinner_label">Seleccione el plan de viaje</string>
+    <string name="agregar_deseo_button_register">Agregar a Plan de Viaje</string>
+    <string name="menu_documentos_title">Documentos</string>
+    <string name="ingresar_documentos_screen_toolbar_title">Ingresa Documento</string>
+    <string name="ingresar_documento_label">Elige el documento</string>
+
+
+    <!--  Modal Agregar Notas Lugares layout string values  -->
+    <string name="item_notas_lugares_modal">Agregar Notas</string>
+    <string name="item_title_notas_modal">Notas</string>
+    <string name="item_title_button_notas_modal">Agregar Nota</string>
+
+    <!--  Modal Eliminar Lugares layout string values  -->
+    <string name="item_eliminar_lugares_modal">Eliminar Lugar</string>
+    <string name="item_title_descripcion_modal">¿Estás seguro de que quieres eliminar este lugar?</string>
+    <string name="item_title_button_eliminar_modal">Eliminar</string>
+    <string name="item_title_button_cancelar_modal">Cancelar</string>
+
+
+    <!-- Valores de los strings del diseño de elementos de la lista de equipaje -->
+
+    <string name="lista_equipaje_toolbar_title">Equipaje</string>
+    <string name="lista_equipaje_item_title">Camisas</string>
+
+    <!--  Modal item layout string values  -->
+    <string name="item_title_equipaje_modal">Agregue los detalles del equipaje</string>
+    <string name="item_title_cantidad_equipaje_modal">Cantidad</string>
+    <string name="item_title_nombre_equipaje_modal">Nombre</string>
+    <string name="item_title_button_equipaje_modal">Agregar</string>
+
+    <!-- Modal nuevo chat de mensajes -->
+    <string name="item_title_nuevo_chat">Agregue los datos del nuevo chat</string>
+    <string name="item_title_nombre_chat">Nombre del chat (persona o canal)</string>
+    <string name="item_title_id_usuario_chat">Correo del colaborador</string>
+    <string name="item_title_button_chat">Crear chat</string>
+
+    <!-- Valores de strings de la pantalla de la lista de deseos -->
+    <string name="wishlists_toolbar_title">Lista de deseos</string>
+    <string name="item_lista_deseoss_title">Lugar</string>
+    <string name="paisess_seleccion_title_descripcion">Descripcion</string>
+    <string name="lista_deseoss_seleccion_title_categoria">Categoría</string>
+
+    <!-- Valores de strings de la pantalla de la busqueda de vuelos -->
+    <string name="busqueda_vuelos_toolbar_title">Busqueda de Vuelos</string>
+    <string name="buscar_vuelos_heading">Ingresa la información del vuelo que deseas buscar</string>
+    <string name="buscar_vuelos_nombre_salida_label">Aeropuerto de Salida</string>
+    <string name="buscar_vuelos_nombre_llegada_label">Aeropuerto de Destino</string>
+    <string name="buscar_vuelos_nombre_hint">Código IATA (XXX)</string>
+    <string name="buscar_vuelos_cantidad_label">Cantidad de Viajeros</string>
+    <string name="buscar_vuelos_cantidad_hint">1</string>
+    <string name="buscar_vuelos_fechaInicio_label">Fecha de Salida</string>
+    <string name="buscar_vuelos_fechaFin_label">Fecha de Regreso</string>
+    <string name="buscar_vuelos_fecha_placeholder">dd/mm/yyyy</string>
+    <string name="buscar_vuelos_plan_label">Buscar Vuelos</string>
+
+    <!-- Valores de strings de la pantalla de la lista de vuelos -->
+    <string name="lista_vuelos_toolbar_title">Lista de Vuelos</string>
+    <string name="item_origen_destino_title">Origen y Destino</string>
+    <string name="item_duracion_title">Duración</string>
+    <string name="item_aerolinea_title">Aerolinea</string>
+    <string name="item_escalas_title">Escalas</string>
+
+    <!-- Valores de cadena para la pantalla "No data" lista de vuelos -->
+    <string name="no_data_vuelos_toolbar_title">Sin Datos</string>
+    <string name="no_data_vuelos_label">¡Sin Vuelos!</string>
+    <string name="no_data_vuelos_info">Parece que no se encontraron vuelos que cumplan con tus filtros de búsqueda.</string>
+    <string name="documento_perfil_label">Documento</string>
+
+    <!--  Modal Eliminar Viajes layout string values  -->
+    <string name="item_eliminar_viaje_modal">Eliminar Viaje</string>
+    <string name="title_modal_eliminar_viaje">¿Estás seguro de que quieres eliminar este viaje?</string>
+    <string name="viajes_propios_label">Viajes Propios</string>
+    <string name="viajes_en_los_que_colaboras_label">Viajes en los que colaboras</string>
+
+    <!-- Valores de strings de la pantalla de la busqueda de hoteles -->
+    <string name="busqueda_hoteles_toolbar_title">Busqueda de Hoteles</string>
+    <string name="buscar_hoteles_heading">Ingresa la información solicitada para buscar hoteles por ciudad</string>
+    <string name="buscar_hoteles_ciudad_label">Ciudad</string>
+    <string name="buscar_radio_label">Aeropuerto de Destino</string>
+    <string name="buscar_hoteles_calificacion_minima_label">Calificación</string>
+    <string name="buscar_hoteles_rating_label">Radio de Búsqueda (KM)</string>
+    <string name="buscar_hoteles_rating_hint">5</string>
+    <string name="buscar_hoteles_label">Buscar Hoteles</string>
+
+    <!-- Valores de strings de la pantalla de la lista de hoteles -->
+    <string name="lista_hoteles_toolbar_title">Lista de Hoteles</string>
+    <!--    <string name="item_origen_destino_title">Origen y Destino</string>-->
+    <!--    <string name="item_duracion_title">Duración</string>-->
+    <!--    <string name="item_aerolinea_title">Aerolinea</string>-->
+    <!--    <string name="item_escalas_title">Escalas</string>-->
+
+    <!-- Valores de cadena para la pantalla "No data" lista de hoteles -->
+    <string name="no_data_hoteles_toolbar_title">Sin Datos</string>
+    <string name="no_data_hoteles_label">¡Sin Hoteles!</string>
+    <string name="no_data_hoteles_info">Parece que no se encontraron hoteles que cumplan con tus filtros de búsqueda.</string>
+    <!--    <string name="documento_perfil_label">Documento</string>-->
+
+    <!-- Valores de strings de la pantalla de la lista de deseos -->
+    <string name="item_lista_hoteles_title">Nombre</string>
+    <string name="hoteles_seleccion_title_ubicacion">Ubicación</string>
+    <string name="lista_hoteles_seleccion_title_calificacion">Calificación</string>
+    <string name="sin_permiso_title_modal">No cuentas con los suficientes permisos para ingresar a esta sección.</string>
+    <string name="sin_permiso_content_modal">Contacta al dueño del plan de viaje para habilitar más opciones</string>
+    <string name="button_sin_permiso_modal">Entendido</string>
+
+
+    <!--  Modal Agregar Notas Lugares layout string values  -->
+    <string name="item_estadisticas_modal">Estadísticas de Viajes</string>
+    <string name="item_title_button_estadisticas_modal">Confirmar</string>
+    <string name="title_cantidad_estadisticas_modal">0</string>
+    <string name="title_cantidad_planes_modal">Cantidad de Viajes</string>
+    <string name="title_cantidad_paises_modal">Países Visitados</string>
+    <string name="title_cantidad_ciudades_modal">Ciudades Visitadas</string>
+    <string name="title_cantidad_lugares_modal">Lugares Visitados</string>
+
+    <!--  Modal Agregar Notas Lugares layout string values  -->
+    <string name="item_title_button_internet_modal">Entendido</string>
+
+    <!-- Valores de strings de la pantalla de crear tiquete -->
+    <string name="crear_tiquete_toolbar_title">Crear Tiquete</string>
+    <string name="crear_tiquete_heading">Ingresa la información solicitada para crear un tiquete. Obtendrás una respuesta al correo electrónico asociado a tu cuenta</string>
+    <string name="categoria_label">Categoría</string>
+    <string name="mensaje_label">Mensaje</string>
+    <string name="crear_tiquete_mensaje_hint">Necesito ayuda con...</string>
+    <string name="crear_tiquete_label">Crear Tiquete</string>
+
+    <!-- Valores de strings de la pantalla de crear tiquete -->
+    <string name="lista_tiquetes_toolbar_title">Lista de Tiquetes</string>
+
+</resources>

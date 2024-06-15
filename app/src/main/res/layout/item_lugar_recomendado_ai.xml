@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_wishlist_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_marginTop="16dp"
+        android:padding="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/secondary"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_product_image"
+        android:layout_width="@dimen/_77sdp"
+        android:layout_height="@dimen/_77sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:cardBackgroundColor="@color/primary"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/card_wishlist_item"
+        app:layout_constraintStart_toStartOf="@+id/card_wishlist_item"
+        app:layout_constraintTop_toTopOf="@+id/card_wishlist_item" />
+
+    <TextView
+        android:id="@+id/text_recomendacion_ai_dia"
+        android:layout_width="@dimen/_77sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:gravity="center"
+        android:textColor="#006400"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="@+id/card_wishlist_item"
+        app:layout_constraintStart_toEndOf="@+id/card_wishlist_item"
+        app:layout_constraintTop_toTopOf="@+id/card_product_image" />
+
+    <TextView
+        android:id="@+id/text_moneda"
+        android:layout_width="@dimen/_77sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_47sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/card_wishlist_item"
+        app:layout_constraintStart_toEndOf="@+id/card_wishlist_item"
+        app:layout_constraintTop_toTopOf="@+id/card_product_image"/>
+
+    <TextView
+        android:id="@+id/text_recomendacion_ai"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:fontFamily="@font/open_sans_medium"
+        android:text="@string/item_recomendacion_ai_nombre"
+        android:textColor="@color/textHighContrast"
+        android:textSize="@dimen/_12ssp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintStart_toEndOf="@+id/card_product_image"
+        app:layout_constraintTop_toTopOf="@+id/card_wishlist_item" />
+
+    <TextView
+        android:id="@+id/text_recomendacion_ai_horario"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_medium"
+        android:maxLines="1"
+        android:text="@string/item_recomendacion_ai_horario"
+        android:textColor="@color/textHighContrast"
+        android:textSize="@dimen/_12ssp"
+        android:layout_marginTop="@dimen/_4sdp"
+        app:layout_constraintStart_toStartOf="@id/text_recomendacion_ai"
+        app:layout_constraintTop_toBottomOf="@id/text_recomendacion_ai" />
+
+    <TextView
+        android:id="@+id/text_recomendacion_ai_precio"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_medium"
+        android:minLines="2"
+        android:text="@string/item_recomendacion_ai_precio"
+        android:textColor="#007BFF"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="@id/text_recomendacion_ai_horario"
+        app:layout_constraintTop_toBottomOf="@id/text_recomendacion_ai_horario" />
+
+    <TextView
+        android:id="@+id/text_recomendacion_ai_direccion"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_medium"
+
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="@string/item_recomendacion_ai_direccion"
+        android:textColor="@color/textHighContrast"
+        android:textSize="@dimen/_12ssp"
+
+        app:layout_constraintStart_toStartOf="@id/text_recomendacion_ai_precio"
+        app:layout_constraintTop_toBottomOf="@id/text_recomendacion_ai_precio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

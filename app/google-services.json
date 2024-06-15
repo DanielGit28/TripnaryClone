@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "221009716279",
+    "project_id": "tripnary-8c3d9",
+    "storage_bucket": "tripnary-8c3d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221009716279:android:517b2326613f7f4b148bb2",
+        "android_client_info": {
+          "package_name": "com.app.tripnary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221009716279-mu6eg6e8bfugk17n13498kjuccdci192.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.tripnary",
+            "certificate_hash": "2117f43b9e33aa433aa681c1c23dd7b70071800c"
+          }
+        },
+        {
+          "client_id": "221009716279-r63o4kion2ureflcls29h8conhapsa1r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTh9deLxf8hSD5h6hWlmTbp-dMpSLgrnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221009716279-jorqfje66j1fsfmjrmnine63nb16v0fi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

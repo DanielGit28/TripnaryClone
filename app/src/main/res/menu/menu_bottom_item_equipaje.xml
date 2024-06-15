@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_update_equipaje"
+        android:title="Actualizar Equipaje" />
+
+    <item
+        android:id="@+id/action_completar_equipaje"
+        android:title="Marcar como completado" />
+
+    <item
+        android:id="@+id/action_eliminar_equipaje"
+        android:title="Eliminar Equipaje" />
+</menu>

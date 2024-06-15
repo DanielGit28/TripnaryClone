@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".ui.interesesgenerales.addinteresesgenerales.views.RegistroInteresesGeneralesFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="520dp"
+        android:layout_height="119dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="258dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="88dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logo_tripnary_azul" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_30sdp">
+
+            <TextView
+                android:id="@+id/text_screen_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_bold"
+                android:gravity="center"
+                android:text="@string/register_interests_heading"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/text_name_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/register_travel_question_label"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+
+                app:layout_constraintTop_toBottomOf="@+id/text_screen_title"
+                tools:layout_editor_absoluteX="19dp" />
+
+            <Spinner
+                android:id="@+id/spinner_tipo_viaje"
+                android:layout_width="371dp"
+                android:layout_height="56dp"
+                android:background="@drawable/edit_text_background"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:spinnerMode="dialog"
+                app:layout_constraintBottom_toTopOf="@+id/text_email_label"
+                app:layout_constraintEnd_toEndOf="@+id/text_name_label"
+                app:layout_constraintHorizontal_bias="0.047"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="@+id/text_name_label"
+                app:layout_constraintTop_toBottomOf="@+id/text_name_label"
+                app:layout_constraintVertical_bias="0.451" />
+
+            <TextView
+                android:id="@+id/text_email_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="88dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/register_contintents_label"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/spinner_tipo_viaje"
+                app:layout_constraintTop_toBottomOf="@+id/text_name_label" />
+
+            <Spinner
+                android:id="@+id/spinner_continentes"
+                android:layout_width="371dp"
+                android:layout_height="56dp"
+                android:background="@drawable/edit_text_background"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:spinnerMode="dialog"
+                app:layout_constraintBottom_toTopOf="@+id/text_password_label"
+                app:layout_constraintEnd_toEndOf="@+id/text_email_label"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="@+id/text_email_label"
+                app:layout_constraintTop_toBottomOf="@+id/text_email_label"
+                app:layout_constraintVertical_bias="0.262" />
+
+            <TextView
+                android:id="@+id/text_password_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="89dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/register_seasons_label"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@+id/spinner_continentes"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/spinner_continentes"
+                app:layout_constraintTop_toBottomOf="@+id/text_email_label" />
+
+            <Spinner
+                android:id="@+id/spinner_temporadas"
+                android:layout_width="371dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/edit_text_background"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:spinnerMode="dialog"
+                app:layout_constraintBottom_toTopOf="@+id/button_registrar_intereses_generales"
+                app:layout_constraintEnd_toEndOf="@+id/text_password_label"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="@+id/text_password_label"
+                app:layout_constraintTop_toTopOf="@+id/text_password_label"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/button_registrar_intereses_generales"
+                android:layout_width="230dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="104dp"
+                android:backgroundTint="@color/SteelBlue"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/information_screen_action_label"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_password_label" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.usuarios.listusuarios.views.PerfilUsuarioFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/SteelBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back_white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:text="@string/my_profile_toolbar_title"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_16ssp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="@dimen/_15sdp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeable_image_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_110sdp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_steelblue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundedHeaderImage" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_customer_avatar"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="@dimen/_15sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/shapeable_image_header"
+                app:layout_constraintStart_toStartOf="@+id/shapeable_image_header"
+                app:layout_constraintTop_toTopOf="@+id/shapeable_image_header" />
+
+            <ImageView
+                android:id="@+id/image_customer_perfil"
+                android:layout_width="@dimen/_54sdp"
+                android:layout_height="@dimen/_54sdp"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/ic_person"
+                app:layout_constraintBottom_toBottomOf="@+id/card_customer_avatar"
+                app:layout_constraintEnd_toEndOf="@+id/card_customer_avatar"
+                app:layout_constraintStart_toStartOf="@+id/card_customer_avatar"
+                app:layout_constraintTop_toTopOf="@+id/card_customer_avatar" />
+
+            <TextView
+                android:id="@+id/text_customer_name"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/open_sans_bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintBottom_toTopOf="@+id/text_customer_email"
+                app:layout_constraintStart_toEndOf="@+id/card_customer_avatar"
+                app:layout_constraintTop_toTopOf="@+id/card_customer_avatar"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/text_customer_email"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_medium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_customer_avatar"
+                app:layout_constraintStart_toStartOf="@+id/text_customer_name"
+                app:layout_constraintTop_toBottomOf="@+id/text_customer_name" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_link_edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_56sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                app:cardBackgroundColor="@color/secondary"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shapeable_image_header" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_left_icon_link_1"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_link_edit_profile"
+                app:layout_constraintStart_toStartOf="@+id/card_link_edit_profile"
+                app:layout_constraintTop_toTopOf="@+id/card_link_edit_profile" />
+
+            <ImageView
+                android:id="@+id/image_left_icon_link_1"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/ic_pencil_black"
+                app:layout_constraintBottom_toBottomOf="@+id/card_left_icon_link_1"
+                app:layout_constraintEnd_toEndOf="@+id/card_left_icon_link_1"
+                app:layout_constraintStart_toStartOf="@+id/card_left_icon_link_1"
+                app:layout_constraintTop_toTopOf="@+id/card_left_icon_link_1"
+                app:tint="@color/SteelBlue" />
+
+            <TextView
+                android:id="@+id/text_link_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:text="@string/my_profile_edit_profile_label"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_left_icon_link_1"
+                app:layout_constraintStart_toEndOf="@+id/card_left_icon_link_1"
+                app:layout_constraintTop_toTopOf="@+id/card_left_icon_link_1" />
+
+            <ImageView
+                android:id="@+id/image_right_icon_link_1"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/ic_chevron"
+                app:layout_constraintBottom_toBottomOf="@+id/card_link_edit_profile"
+                app:layout_constraintEnd_toEndOf="@+id/card_link_edit_profile"
+                app:layout_constraintTop_toTopOf="@+id/card_link_edit_profile"
+                app:tint="@color/textLowContrast" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_link_lista_deseos"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_56sdp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                app:cardBackgroundColor="@color/secondary"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_link_edit_profile" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_left_icon_link_4"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_link_lista_deseos"
+                app:layout_constraintStart_toStartOf="@+id/card_link_lista_deseos"
+                app:layout_constraintTop_toTopOf="@+id/card_link_lista_deseos" />
+
+            <ImageView
+                android:id="@+id/image_left_icon_link_4"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/ic_heart"
+                app:layout_constraintBottom_toBottomOf="@+id/card_left_icon_link_4"
+                app:layout_constraintEnd_toEndOf="@+id/card_left_icon_link_4"
+                app:layout_constraintStart_toStartOf="@+id/card_left_icon_link_4"
+                app:layout_constraintTop_toTopOf="@+id/card_left_icon_link_4"
+                app:tint="@color/SteelBlue" />
+
+            <TextView
+                android:id="@+id/text_link_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:text="@string/my_profile_my_wishlist_label"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_left_icon_link_4"
+                app:layout_constraintStart_toEndOf="@+id/card_left_icon_link_4"
+                app:layout_constraintTop_toTopOf="@+id/card_left_icon_link_4" />
+
+            <ImageView
+                android:id="@+id/image_right_icon_link_4"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/ic_chevron"
+                app:layout_constraintBottom_toBottomOf="@+id/card_link_lista_deseos"
+                app:layout_constraintEnd_toEndOf="@+id/card_link_lista_deseos"
+                app:layout_constraintTop_toTopOf="@+id/card_link_lista_deseos"
+                app:tint="@color/textLowContrast" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_link_planes"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_56sdp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                app:cardBackgroundColor="@color/secondary"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_link_lista_deseos" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_left_icon_link_6"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_link_planes"
+                app:layout_constraintStart_toStartOf="@+id/card_link_planes"
+                app:layout_constraintTop_toTopOf="@+id/card_link_planes" />
+
+            <ImageView
+                android:id="@+id/image_left_icon_link_6"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/ic_travel"
+                app:layout_constraintBottom_toBottomOf="@+id/card_left_icon_link_6"
+                app:layout_constraintEnd_toEndOf="@+id/card_left_icon_link_6"
+                app:layout_constraintStart_toStartOf="@+id/card_left_icon_link_6"
+                app:layout_constraintTop_toTopOf="@+id/card_left_icon_link_6"
+                app:tint="@color/SteelBlue" />
+
+            <TextView
+                android:id="@+id/text_link_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:text="@string/my_profile_planes_label"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_left_icon_link_6"
+                app:layout_constraintStart_toEndOf="@+id/card_left_icon_link_6"
+                app:layout_constraintTop_toTopOf="@+id/card_left_icon_link_6" />
+
+            <ImageView
+                android:id="@+id/image_right_icon_link_6"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/ic_chevron"
+                app:layout_constraintBottom_toBottomOf="@+id/card_link_planes"
+                app:layout_constraintEnd_toEndOf="@+id/card_link_planes"
+                app:layout_constraintTop_toTopOf="@+id/card_link_planes"
+                app:tint="@color/textLowContrast" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_link_estadisticas"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_56sdp"
+                android:layout_marginVertical="@dimen/_15sdp"
+                app:cardBackgroundColor="@color/secondary"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_link_planes" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_left_icon_link_7"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_link_estadisticas"
+                app:layout_constraintStart_toStartOf="@+id/card_link_estadisticas"
+                app:layout_constraintTop_toTopOf="@+id/card_link_estadisticas" />
+
+            <ImageView
+                android:id="@+id/image_left_icon_link_7"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/ic_travel"
+                app:layout_constraintBottom_toBottomOf="@+id/card_left_icon_link_7"
+                app:layout_constraintEnd_toEndOf="@+id/card_left_icon_link_7"
+                app:layout_constraintStart_toStartOf="@+id/card_left_icon_link_7"
+                app:layout_constraintTop_toTopOf="@+id/card_left_icon_link_7"
+                app:tint="@color/SteelBlue" />
+
+            <TextView
+                android:id="@+id/text_link_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:text="@string/my_profile_estadisticas_label"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/card_left_icon_link_7"
+                app:layout_constraintStart_toEndOf="@+id/card_left_icon_link_7"
+                app:layout_constraintTop_toTopOf="@+id/card_left_icon_link_7" />
+
+            <ImageView
+                android:id="@+id/image_right_icon_link_7"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:contentDescription="@string/image_content_description"
+                android:src="@drawable/ic_chevron"
+                app:layout_constraintBottom_toBottomOf="@+id/card_link_estadisticas"
+                app:layout_constraintEnd_toEndOf="@+id/card_link_estadisticas"
+                app:layout_constraintTop_toTopOf="@+id/card_link_estadisticas"
+                app:tint="@color/textLowContrast" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

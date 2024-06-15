@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".ui.general.OlvidoContrasennaFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/SteelBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:text="@string/forgot_password_toolbar_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_30sdp">
+
+            <TextView
+                android:id="@+id/text_screen_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/forgot_password_heading"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_screen_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/open_sans_medium"
+                android:text="@string/forgot_password_info"
+                android:textColor="@color/textLowContrast"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/text_screen_title"
+                app:layout_constraintStart_toStartOf="@+id/text_screen_title"
+                app:layout_constraintTop_toBottomOf="@+id/text_screen_title" />
+
+            <TextView
+                android:id="@+id/text_current_password_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_45sdp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/forgot_password_email_label"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_screen_info" />
+
+            <EditText
+                android:id="@+id/edit_text_forgot_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:autofillHints="emailAddress"
+                android:background="@drawable/edit_text_background"
+                android:drawableStart="@drawable/ic_message_blue"
+                android:drawablePadding="@dimen/_15sdp"
+                android:fontFamily="@font/open_sans_medium"
+                android:hint="@string/forgot_password_email_hint"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:textColor="@color/textHighContrast"
+                android:textColorHint="@color/textLowContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@+id/text_current_password_label"
+                app:layout_constraintStart_toStartOf="@+id/text_current_password_label"
+                app:layout_constraintTop_toBottomOf="@+id/text_current_password_label" />
+
+
+
+            <Button
+                android:id="@+id/button_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_52sdp"
+                android:backgroundTint="@color/SteelBlue"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/forgot_password_button"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="@id/edit_text_forgot_email"
+                app:layout_constraintStart_toStartOf="@id/edit_text_forgot_email"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_forgot_email" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

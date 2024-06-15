@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:id="@+id/perfil_general_viaje_fragment"
+    android:tag="PerfilGeneralViajeFragment"
+    tools:context=".ui.planesviajes.perfilplanviaje.PerfilGeneralViajeFragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/SteelBlue"
+        app:navigationIcon="@drawable/ic_arrow_back_white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:id="@+id/text_title_perfil_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_toolbar_title"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:layout_gravity="center"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/title_internet_perfil"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@color/darkGrey"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center_horizontal"
+        android:text="@string/no_internet_toolbar_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <ImageView
+        android:id="@+id/placeholder_perfil_viaje"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:src="@drawable/placeholder_400_250"
+        app:layout_constraintTop_toBottomOf="@id/title_internet_perfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/image_content_description"
+        />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/placeholder_perfil_viaje"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            >
+
+            <TextView
+                android:id="@+id/text_product_plan_viaje"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:fontFamily="@font/open_sans_bold"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/perfil_plan_title_duracion"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_13ssp"
+                android:layout_marginStart="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_plan_dias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="@+id/text_product_plan_viaje"
+                app:layout_constraintTop_toBottomOf="@+id/text_product_plan_viaje" />
+
+            <TextView
+                android:id="@+id/text_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/perfil_plan_title_lugares"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_14ssp"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintStart_toStartOf="@+id/recycler_view_plan_dias"
+                app:layout_constraintTop_toBottomOf="@+id/recycler_view_plan_dias" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_lugares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="172dp"
+                android:layout_marginTop="28dp"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/text_price"
+                app:layout_constraintTop_toBottomOf="@+id/text_price" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_lugares_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="@+id/text_price"
+                app:layout_constraintTop_toBottomOf="@+id/text_price" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_lugares_propios_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="@+id/recycler_view_lugares_perfil"
+                app:layout_constraintTop_toBottomOf="@+id/recycler_view_lugares_perfil" />
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_plus_icon_dia"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:cardBackgroundColor="@color/secondary"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/text_quantity_dias"
+                app:layout_constraintEnd_toStartOf="@+id/text_quantity_dias"
+                app:layout_constraintTop_toTopOf="@+id/text_quantity_dias" />
+
+            <ImageView
+                android:id="@+id/image_plus_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_plus_green"
+                app:layout_constraintStart_toStartOf="@+id/card_plus_icon_dia"
+                app:layout_constraintEnd_toEndOf="@+id/card_plus_icon_dia"
+                app:layout_constraintTop_toTopOf="@+id/card_plus_icon_dia"
+                app:layout_constraintBottom_toBottomOf="@+id/card_plus_icon_dia"
+                android:contentDescription="@string/image_content_description"
+                />
+
+            <TextView
+                android:id="@+id/text_quantity_dias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_qty"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/textHighContrast"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:layout_constraintEnd_toStartOf="@+id/card_minus_icon_dia"
+                app:layout_constraintTop_toTopOf="@+id/card_minus_icon_dia"
+                app:layout_constraintBottom_toBottomOf="@+id/card_minus_icon_dia"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_minus_icon_dia"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:cardBackgroundColor="@color/secondary"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/text_product_plan_viaje"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/text_product_plan_viaje" />
+
+            <ImageView
+                android:id="@+id/image_minus_icon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_minus_orange"
+                app:layout_constraintStart_toStartOf="@+id/card_minus_icon_dia"
+                app:layout_constraintEnd_toEndOf="@+id/card_minus_icon_dia"
+                app:layout_constraintTop_toTopOf="@+id/card_minus_icon_dia"
+                app:layout_constraintBottom_toBottomOf="@+id/card_minus_icon_dia"
+                android:contentDescription="@string/image_content_description"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

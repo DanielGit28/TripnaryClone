@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".ui.lugares.mapas.MapsLugaresFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/SteelBlue"
+        app:navigationIcon="@drawable/ic_arrow_back_white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wishlist_toolbar_title"
+            android:textSize="@dimen/_16ssp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:layout_gravity="center"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <fragment
+        android:id="@+id/fragmentMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_450sdp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/card_recent_transaction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".ui.lugares.mapas.MapsLugaresFragment" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_recent_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        app:cardBackgroundColor="@color/grey"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragmentMap" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/lugar_perfil_image"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/card_recent_transaction"
+        app:layout_constraintStart_toStartOf="@+id/card_recent_transaction"
+        app:layout_constraintTop_toTopOf="@+id/card_recent_transaction"
+        app:shapeAppearanceOverlay="@style/roundedRecentTransactionImage"
+        app:srcCompat="@drawable/placeholder_100_100_rounded" />
+
+    <TextView
+        android:id="@+id/text_nombre_lugar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:text="@string/item_lista_lugares_title_perfil"
+        android:textColor="@color/textHighContrast"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toTopOf="@+id/text_lugar_coordenadas"
+        app:layout_constraintStart_toEndOf="@+id/lugar_perfil_image"
+        app:layout_constraintTop_toBottomOf="@+id/card_recent_transaction"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <ImageView
+        android:id="@+id/image_checkmark"
+        android:layout_width="@dimen/_14sdp"
+        android:layout_height="@dimen/_14sdp"
+        android:src="@drawable/ic_checkmark_white"
+        app:tint="@color/primary"
+        app:layout_constraintBottom_toBottomOf="@+id/text_nombre_lugar_title"
+        app:layout_constraintEnd_toEndOf="@+id/card_recent_transaction"
+        app:layout_constraintTop_toTopOf="@+id/text_nombre_lugar_title"
+        android:contentDescription="@string/image_content_description" />
+
+
+    <TextView
+        android:id="@+id/text_lugar_coordenadas"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_medium"
+        android:text="@string/item_lista_lugares_title_date"
+        android:textColor="@color/textLowContrast"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toTopOf="@+id/card_recent_transaction"
+        app:layout_constraintStart_toStartOf="@+id/text_nombre_lugar_title"
+        app:layout_constraintTop_toBottomOf="@+id/text_nombre_lugar_title"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

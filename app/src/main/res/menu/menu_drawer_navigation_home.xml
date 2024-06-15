@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:checked="true"
+            android:checkable="true"
+            android:icon="@drawable/ic_home_orange"
+            android:title="@string/item_home_drawer_nav_1" />
+
+        <item
+            android:id="@+id/planeViajes"
+            android:checkable="false"
+            android:icon="@drawable/ic_travel"
+            android:title="@string/item_home_drawer_nav_4" />
+
+        <item
+            android:id="@+id/listaDeseos"
+            android:checkable="false"
+            android:icon="@drawable/ic_heart"
+            android:title="@string/item_home_drawer_nav_3" />
+        <item
+            android:id="@+id/mensajes"
+            android:checkable="false"
+            android:icon="@drawable/ic_message"
+            android:title="@string/item_home_drawer_nav_mensajes" />
+
+        <item
+            android:id="@+id/busquedaVuelos"
+            android:checkable="false"
+            android:icon="@drawable/ic_airplane_ticket"
+            android:title="@string/item_home_drawer_nav_10" />
+
+        <item
+            android:id="@+id/busquedaHoteles"
+            android:checkable="false"
+            android:icon="@drawable/ic_hotel_icon"
+            android:title="@string/item_home_drawer_nav_11" />
+
+        <item
+            android:id="@+id/crearTiquetes"
+            android:checkable="false"
+            android:icon="@drawable/ic_service"
+            android:title="@string/item_home_drawer_nav_12" />
+
+
+        <item
+            android:id="@+id/login"
+            android:checkable="false"
+            android:icon="@drawable/ic_log_in"
+            android:title="@string/item_home_drawer_nav_8" />
+        <item
+            android:id="@+id/logout"
+            android:checkable="false"
+            android:icon="@drawable/ic_log_out"
+            android:title="Cerrar sesión" />    
+        <item
+            android:id="@+id/register"
+            android:checkable="false"
+            android:icon="@drawable/ic_user_orange"
+            android:title="@string/item_home_drawer_nav_9" />
+            
+        
+    </group>
+</menu>

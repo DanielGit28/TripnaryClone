@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="@dimen/_15sdp"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_recent_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_85sdp"
+        app:cardBackgroundColor="@color/grey"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/lugar_recomendado_perfil_image"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/card_recent_transaction"
+        app:layout_constraintStart_toStartOf="@+id/card_recent_transaction"
+        app:layout_constraintTop_toTopOf="@+id/card_recent_transaction"
+        app:shapeAppearanceOverlay="@style/roundedRecentTransactionImage"
+        app:srcCompat="@drawable/placeholder_100_100_rounded" />
+
+    <TextView
+        android:id="@+id/text_lugar_recomendado_perfil_title"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:text="@string/item_lista_lugares_title_perfil"
+        android:textColor="@color/textHighContrast"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toTopOf="@+id/text_lugar_recomendado_perfil_date"
+        app:layout_constraintStart_toEndOf="@+id/lugar_recomendado_perfil_image"
+        app:layout_constraintTop_toBottomOf="@+id/card_recent_transaction"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <ImageView
+        android:id="@+id/image_checkmark"
+        android:layout_width="@dimen/_14sdp"
+        android:layout_height="@dimen/_14sdp"
+        android:src="@drawable/ic_checkmark_white"
+        app:tint="@color/primary"
+        app:layout_constraintBottom_toBottomOf="@+id/text_lugar_recomendado_perfil_title"
+        app:layout_constraintEnd_toEndOf="@+id/card_recent_transaction"
+        app:layout_constraintTop_toTopOf="@+id/text_lugar_recomendado_perfil_title"
+        android:contentDescription="@string/image_content_description" />
+
+
+    <TextView
+        android:id="@+id/text_lugar_recomendado_perfil_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/open_sans_medium"
+        android:text="@string/item_lista_lugares_title_date"
+        android:textColor="@color/textLowContrast"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toTopOf="@+id/card_recent_transaction"
+        app:layout_constraintStart_toStartOf="@+id/text_lugar_recomendado_perfil_title"
+        app:layout_constraintTop_toBottomOf="@+id/text_lugar_recomendado_perfil_title"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_category"
+        android:layout_width="181dp"
+        android:layout_height="240dp"
+        app:cardBackgroundColor="@color/secondary"
+        app:cardCornerRadius="@dimen/_30sdp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/image_category"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/image_content_description"
+        android:src="@drawable/placeholder_100_100_rounded"
+        app:layout_constraintBottom_toTopOf="@+id/text_category_name"
+        app:layout_constraintEnd_toEndOf="@+id/card_category"
+        app:layout_constraintStart_toStartOf="@+id/card_category"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/text_category_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/open_sans_medium"
+        android:maxLines="2"
+        android:gravity="center"
+        android:textColor="@color/textHighContrast"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        app:layout_constraintBottom_toTopOf="@+id/image_heart_icon"
+        app:layout_constraintEnd_toEndOf="@+id/card_category"
+        app:layout_constraintStart_toStartOf="@+id/card_category"
+        app:layout_constraintTop_toBottomOf="@+id/image_category" />
+
+    <ImageView
+        android:id="@+id/image_heart_icon"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="13dp"
+        android:contentDescription="@string/image_content_description"
+        android:src="@drawable/ic_heart"
+        app:layout_constraintBottom_toBottomOf="@id/text_category_name"
+        app:layout_constraintEnd_toEndOf="@+id/text_category_name"
+        app:layout_constraintStart_toStartOf="@+id/text_category_name"
+        app:layout_constraintTop_toBottomOf="@+id/text_category_name"
+        app:tint="@color/textHighContrast" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

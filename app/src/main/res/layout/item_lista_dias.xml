@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_dia_perfil"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="@dimen/_50sdp"
+        app:cardBackgroundColor="@color/secondary"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/text_dia_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/open_sans_semi_bold"
+        android:text="@string/item_dia_name"
+        android:textColor="@color/textHighContrast"
+        app:layout_constraintBottom_toTopOf="@+id/text_dia_fecha"
+        app:layout_constraintEnd_toEndOf="@+id/card_dia_perfil"
+        app:layout_constraintStart_toStartOf="@+id/card_dia_perfil" />
+
+    <TextView
+        android:id="@+id/text_dia_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/open_sans_regular"
+        android:text="@string/item_dia_fecha"
+        android:textColor="@color/textHighContrast"
+        app:layout_constraintTop_toBottomOf="@+id/text_dia_name"
+        app:layout_constraintStart_toStartOf="@+id/text_dia_name"
+        app:layout_constraintEnd_toEndOf="@+id/text_dia_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

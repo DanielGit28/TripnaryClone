@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".ui.vuelos.BusquedaVuelosFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/SteelBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_arrow_back_white"
+        app:titleTextColor="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:text="@string/busqueda_vuelos_toolbar_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/title_internet_home"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:background="@color/darkGrey"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center_horizontal"
+        android:text="@string/no_internet_toolbar_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_internet_home">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/text_screen_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/open_sans_medium"
+                android:text="@string/buscar_vuelos_heading"
+                android:textColor="@color/textLowContrast"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"  />
+
+            <TextView
+                android:id="@+id/text_aeropuerto_salida_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/buscar_vuelos_nombre_salida_label"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/text_screen_info"
+                app:layout_constraintStart_toStartOf="@id/text_screen_info"
+                app:layout_constraintTop_toBottomOf="@+id/text_screen_info" />
+
+            <EditText
+                android:id="@+id/edit_text_aeropuerto_salida_plan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:autofillHints="text"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="@dimen/_15sdp"
+                android:fontFamily="@font/open_sans_medium"
+                android:hint="@string/buscar_vuelos_nombre_hint"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:textColor="@color/textHighContrast"
+                android:textColorHint="@color/textLowContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/text_aeropuerto_salida_label"
+                app:layout_constraintStart_toStartOf="@id/text_aeropuerto_salida_label"
+                app:layout_constraintTop_toBottomOf="@+id/text_aeropuerto_salida_label" />
+
+            <TextView
+                android:id="@+id/text_aeropuerto_destino_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/buscar_vuelos_nombre_llegada_label"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/edit_text_aeropuerto_salida_plan"
+                app:layout_constraintStart_toStartOf="@id/edit_text_aeropuerto_salida_plan"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_aeropuerto_salida_plan" />
+
+            <EditText
+                android:id="@+id/edit_text_aeropuerto_destino_plan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:autofillHints="text"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="@dimen/_15sdp"
+                android:fontFamily="@font/open_sans_medium"
+                android:hint="@string/buscar_vuelos_nombre_hint"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:textColor="@color/textHighContrast"
+                android:textColorHint="@color/textLowContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/text_aeropuerto_destino_label"
+                app:layout_constraintStart_toStartOf="@id/text_aeropuerto_destino_label"
+                app:layout_constraintTop_toBottomOf="@+id/text_aeropuerto_destino_label" />
+
+            <TextView
+                android:id="@+id/text_fecha_salida_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/buscar_vuelos_fechaInicio_label"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/edit_text_aeropuerto_destino_plan"
+                app:layout_constraintStart_toStartOf="@id/edit_text_aeropuerto_destino_plan"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_aeropuerto_destino_plan" />
+
+            <TextView
+                android:id="@+id/button_fecha_salida"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:autofillHints="text"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="@dimen/_15sdp"
+                android:fontFamily="@font/open_sans_medium"
+                android:gravity="center_vertical"
+                android:hint="@string/buscar_vuelos_fecha_placeholder"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:textColor="@color/textHighContrast"
+                android:textColorHint="@color/textLowContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/text_fecha_salida_label"
+                app:layout_constraintStart_toStartOf="@id/text_fecha_salida_label"
+                app:layout_constraintTop_toBottomOf="@+id/text_fecha_salida_label" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/text_fecha_regreso_label"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:fontFamily="@font/open_sans_bold"-->
+<!--                android:text="@string/buscar_vuelos_fechaFin_label"-->
+<!--                android:textColor="@color/textHighContrast"-->
+<!--                android:textSize="@dimen/_12ssp"-->
+<!--                app:layout_constraintEnd_toEndOf="@id/button_fecha_salida"-->
+<!--                app:layout_constraintStart_toStartOf="@id/button_fecha_salida"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/button_fecha_salida" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/button_fecha_regreso"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_45sdp"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:autofillHints="text"-->
+<!--                android:background="@drawable/edit_text_background"-->
+<!--                android:drawablePadding="@dimen/_15sdp"-->
+<!--                android:fontFamily="@font/open_sans_medium"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:hint="@string/buscar_vuelos_fecha_placeholder"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:paddingHorizontal="@dimen/_15sdp"-->
+<!--                android:textColor="@color/textHighContrast"-->
+<!--                android:textColorHint="@color/textLowContrast"-->
+<!--                android:textSize="@dimen/_12ssp"-->
+<!--                app:layout_constraintEnd_toEndOf="@id/text_fecha_regreso_label"-->
+<!--                app:layout_constraintStart_toStartOf="@id/text_fecha_regreso_label"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/text_fecha_regreso_label" />-->
+
+            <TextView
+                android:id="@+id/text_cantidad_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/buscar_vuelos_cantidad_label"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/button_fecha_salida"
+                app:layout_constraintStart_toStartOf="@id/button_fecha_salida"
+                app:layout_constraintTop_toBottomOf="@+id/button_fecha_salida" />
+
+            <EditText
+                android:id="@+id/edit_text_cantidad_plan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@drawable/edit_text_background"
+                android:drawablePadding="@dimen/_15sdp"
+                android:fontFamily="@font/open_sans_medium"
+                android:hint="@string/buscar_vuelos_cantidad_hint"
+                android:inputType="number"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:textColor="@color/textHighContrast"
+                android:textColorHint="@color/textLowContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="@id/text_cantidad_label"
+                app:layout_constraintStart_toStartOf="@id/text_cantidad_label"
+                app:layout_constraintTop_toBottomOf="@+id/text_cantidad_label" />
+
+
+            <Button
+                android:id="@+id/button_buscar_vuelos"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_52sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:backgroundTint="@color/SteelBlue"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/buscar_vuelos_plan_label"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="@id/edit_text_cantidad_plan"
+                app:layout_constraintStart_toStartOf="@id/edit_text_cantidad_plan"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_cantidad_plan" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_notification"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_15sdp"
+        app:cardBackgroundColor="@color/primary"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_15sdp">
+
+
+            <TextView
+                android:id="@+id/text_notification_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:gravity="center_horizontal"
+                android:text="@string/item_estadisticas_modal"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toTopOf="@+id/button_estadisticas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <TextView
+                android:id="@+id/text_cantidad_planes_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans_medium"
+                android:text="@string/title_cantidad_planes_modal"
+                android:textColor="@color/textLowContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toTopOf="@+id/text_notification_title"
+                app:layout_constraintStart_toStartOf="@+id/text_notification_title"
+                app:layout_constraintTop_toBottomOf="@+id/text_notification_title"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text_cantidad_planes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/title_cantidad_estadisticas_modal"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/text_cantidad_planes_label"
+                app:layout_constraintEnd_toEndOf="@+id/text_notification_title"
+                app:layout_constraintTop_toTopOf="@+id/text_cantidad_planes_label"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <TextView
+                android:id="@+id/text_cantidad_paises_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans_medium"
+                android:text="@string/title_cantidad_paises_modal"
+                android:textColor="@color/textLowContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toTopOf="@+id/text_cantidad_planes_label"
+                app:layout_constraintStart_toStartOf="@+id/text_cantidad_planes_label"
+                app:layout_constraintTop_toBottomOf="@+id/text_cantidad_planes_label"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text_cantidad_paises"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/title_cantidad_estadisticas_modal"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/text_cantidad_paises_label"
+                app:layout_constraintEnd_toEndOf="@+id/text_notification_title"
+                app:layout_constraintTop_toTopOf="@+id/text_cantidad_paises_label"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text_cantidad_ciudadeslabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans_medium"
+                android:text="@string/title_cantidad_ciudades_modal"
+                android:textColor="@color/textLowContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toTopOf="@+id/text_cantidad_paises_label"
+                app:layout_constraintStart_toStartOf="@+id/text_cantidad_paises_label"
+                app:layout_constraintTop_toBottomOf="@+id/text_cantidad_paises_label"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text_cantidad_ciudades"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/title_cantidad_estadisticas_modal"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/text_cantidad_ciudadeslabel"
+                app:layout_constraintEnd_toEndOf="@+id/text_notification_title"
+                app:layout_constraintTop_toTopOf="@+id/text_cantidad_ciudadeslabel"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text_cantidad_lugares_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/open_sans_medium"
+                android:text="@string/title_cantidad_lugares_modal"
+                android:textColor="@color/textLowContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toTopOf="@+id/text_cantidad_ciudadeslabel"
+                app:layout_constraintStart_toStartOf="@+id/text_cantidad_ciudadeslabel"
+                app:layout_constraintTop_toBottomOf="@+id/text_cantidad_ciudadeslabel"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text_cantidad_lugares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/title_cantidad_estadisticas_modal"
+                android:textColor="@color/textHighContrast"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/text_cantidad_lugares_label"
+                app:layout_constraintEnd_toEndOf="@+id/text_notification_title"
+                app:layout_constraintTop_toTopOf="@+id/text_cantidad_lugares_label"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/button_estadisticas"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:backgroundTint="@color/SteelBlue"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/item_title_button_estadisticas_modal"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                app:cornerRadius="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="@id/text_cantidad_lugares"
+                app:layout_constraintStart_toStartOf="@id/text_cantidad_lugares"
+                app:layout_constraintTop_toBottomOf="@+id/text_cantidad_lugares" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
